@@ -2,7 +2,7 @@
 #### Pitch application, 11/1/2020
 #### By **Greg Katono**
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+This app allows the users to view the different categories; pickup lines, interviews products and promotion pitches. they can vote up or down any of the pitches.They can also comment on the pitches but only after they login to the system so they can leave comments add more pitches. they can edit their profile. Users can also see how many pitches they have created since they joined or created account.
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
