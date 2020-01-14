@@ -64,3 +64,28 @@ def new_pitches():
         category = pitch_form.carrtegory.data
 
         # updating pitch instance
+         new_pitch = Pitch(title = title,content = pitch,category = category,user = current_user,likes = 0,dislikes = 0)
+
+        # save pitch
+        new_pitch.save_pitch()
+        return redirect(url_for('.index'))
+
+    title = 'New Pitch'
+    return render_template('new_pitch.html',title = title,pitch_form = pitch_form)
+
+
+@main.route('/pitches/pickup_pitches')
+def pickup_pitches():
+
+    pitches = Pitch.get_pitches('pickup_pitches')
+
+    return render_template("pickup_line.html", pitches = pitches)
+
+@main.route('/pitches/interview_pitches')
+def interview_pitches():
+
+    pitches = Pitch.get_pitches('interview')
+
+    return render_template("interview_pitches.html", pitches = pitches)
+
+@main.route('/pitches/product_pitches')
