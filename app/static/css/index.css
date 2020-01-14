@@ -1,0 +1,12 @@
+jumbotron {
+    background-color: #E63462;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Segoe Script;
+
+}
+.navbar {
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0px;
+}
