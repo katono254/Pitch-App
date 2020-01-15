@@ -19,10 +19,10 @@ def index():
     title = "Welcome to One Minute Perfect Pitch"
 
     # getting pitches by category
-    pickup_pitches = Pitch.get_pitches("pickup_pitches")
-    interview_pitches = Pitch.get_pitches("interview")
-    product_pitches = Pitch.get_pitches("product")
-    promotion_pitches = Pitch.get_pitches("promotion")
+    #pickup_pitches = Pitch.get_pitches("pickup_pitches")
+    #interview_pitches = Pitch.get_pitches("interview")
+    #product_pitches = Pitch.get_pitches("product")
+    #promotion_pitches = Pitch.get_pitches("promotion")
 
     return render_template('index.html',title = title,pickup = pickup_pitches,interview = interview_pitches,product = product_pitches,promotion = promotion_pitches)
 

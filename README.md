@@ -14,6 +14,6 @@ This project was build using Python3.6. Flask postgresql for the database and De
 Phone number:0716613990
 Email address:blackrocket.47@gmail.com
 ## Development server
-Run source virtual/bin/activate to enter into the virtual environment and ./start.sh to serve the app locally.
+This site is still under construction.
 Copyright (c) {2020} **{Greg Katono}**
   

@@ -9,7 +9,7 @@ class Config:
     # SQLALCHEMY_TRACK_MODIFICATIONS = False
     # UPLOADED_PHOTOS_DEST ='app/static/photos'
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aphya5:NewPasword@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://greg:greg1234@localhost/greg'
 
     # email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -29,7 +29,7 @@ class TestConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aphya5:NewPasword@localhost/pitches_test'
+	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://greg:greg1234@localhost/greg'
 
 
 class ProdConfig(Config):
@@ -47,7 +47,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aphya5:NewPasword@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://greg:greg1234@localhost/greg'
     DEBUG = True
 
 config_options = {
