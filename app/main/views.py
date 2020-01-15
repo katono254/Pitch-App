@@ -11,9 +11,11 @@ from .forms import UpdateProfile,PitchForm,CommentForm
 # views
 @main.route('/')
 def index():
-     '''
+
+    '''
     View root page function that returns the index page and its data
     '''
+
     title = "Welcome to One Minute Perfect Pitch"
 
     # getting pitches by category
@@ -64,7 +66,7 @@ def new_pitches():
         category = pitch_form.carrtegory.data
 
         # updating pitch instance
-         new_pitch = Pitch(title = title,content = pitch,category = category,user = current_user,likes = 0,dislikes = 0)
+        new_pitch = Pitch(title = title,content = pitch,category = category,user = current_user,likes = 0,dislikes = 0)
 
         # save pitch
         new_pitch.save_pitch()
