@@ -15,5 +15,5 @@ Phone number:0716613990
 Email address:blackrocket.47@gmail.com
 ## Development server
 This site is still under construction.
-Copyright (c) {2020} **{Greg Katono}**
+Copyright (c) 2020 **Greg Katono**
   
