@@ -29,7 +29,7 @@ class TestConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-	#SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://greg:greg1234@localhost/greg'
+	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://greg:greg1234@localhost/greg'
 
 
 class ProdConfig(Config):
