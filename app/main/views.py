@@ -16,13 +16,11 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    title = "Welcome to One Minute Perfect Pitch"
-
-    # getting pitches by category
-    #pickup_pitches = Pitch.get_pitches("pickup_pitches")
-    #interview_pitches = Pitch.get_pitches("interview")
-    #product_pitches = Pitch.get_pitches("product")
-    #promotion_pitches = Pitch.get_pitches("promotion")
+    title = "Bienvenue to pitches"    
+    pickup_pitches = Pitch.get_pitches("pickup_pitches")
+    interview_pitches = Pitch.get_pitches("interview")
+    product_pitches = Pitch.get_pitches("product")
+    promotion_pitches = Pitch.get_pitches("promotion")
 
     return render_template('index.html',title = title,pickup = pickup_pitches,interview = interview_pitches,product = product_pitches,promotion = promotion_pitches)
 
