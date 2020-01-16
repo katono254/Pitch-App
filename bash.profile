@@ -1,0 +1,1 @@
+export SECRET_KEY="8b8fbb26090653b8d5df1778737eb4bd42"

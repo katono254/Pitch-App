@@ -6,6 +6,7 @@ from app.models import User,Pitch,Comment
 
 # Creating app instance
 app = create_app('development')
+app.config["SECRET_KEY"]="8b8fbb26090653b8d5df1778737eb4bd42"
 # app = create_app('test')
 # app = create_app('production')
 
